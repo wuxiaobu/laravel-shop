@@ -1,0 +1,18 @@
+{
+    "name": "wuxiaobu/hasher",
+    "description": "try make a package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wuxiaobu",
+            "email": "woshilieqie@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+       "psr-4": {
+            "Hasher\\": "src/"
+        }
+    }
+}
