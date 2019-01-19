@@ -29,4 +29,5 @@ Route::group(['middleware' => 'auth'], function() {
          return 'Your email is verified';
      });
  });
+ Route::get('user-addresses', 'UserAddressesController@index')->name('user_addresses.index');
 });
