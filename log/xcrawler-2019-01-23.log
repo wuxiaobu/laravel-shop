@@ -1,0 +1,8 @@
+[2019-01-23 09:37:24] xcrawler.dytt8:detail.INFO: 初始化队列 start [] []
+[2019-01-23 09:37:25] xcrawler.dytt8:detail.INFO: 初始化队列 done [] []
+[2019-01-23 09:37:25] xcrawler.dytt8:detail.INFO: 爬取 start [] []
+[2019-01-23 09:37:35] xcrawler.dytt8:detail.ERROR: 失败请求:{"method":"get","uri":"http:\/\/b2b.huangye88.com\/guangdong\/jixie\/pn5\/"} 失败原因:cURL error 28: Operation timed out after 10322 milliseconds with 50521 out of 72184 bytes received (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)  [] []
+[2019-01-23 09:37:35] xcrawler.dytt8:detail.ERROR: 失败请求:{"method":"get","uri":"http:\/\/b2b.huangye88.com\/guangdong\/jixie\/pn6\/"} 失败原因:cURL error 28: Operation timed out after 10322 milliseconds with 56459 out of 73266 bytes received (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)  [] []
+[2019-01-23 09:37:35] xcrawler.dytt8:detail.ERROR: 失败请求:{"method":"get","uri":"http:\/\/b2b.huangye88.com\/guangdong\/jixie\/pn7\/"} 失败原因:cURL error 28: Operation timed out after 10322 milliseconds with 14120 out of 72124 bytes received (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)  [] []
+[2019-01-23 09:37:35] xcrawler.dytt8:detail.ERROR: 失败请求:{"method":"get","uri":"http:\/\/b2b.huangye88.com\/guangdong\/jixie\/pn9\/"} 失败原因:cURL error 28: Operation timed out after 10322 milliseconds with 31642 out of 72486 bytes received (see http://curl.haxx.se/libcurl/c/libcurl-errors.html)  [] []
+[2019-01-23 09:37:36] xcrawler.dytt8:detail.INFO: 爬取 done 花费时间:11.228682s 线程数:100 总页数:10 请求成功次数:10 请求失败次数:4 解析失败次数:0 [] []

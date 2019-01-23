@@ -30,4 +30,6 @@ Route::group(['middleware' => 'auth'], function() {
      });
  });
  Route::get('user-addresses', 'UserAddressesController@index')->name('user_addresses.index');
+ Route::get('user_addresses/{user_address}', 'UserAddressesController@edit')->name('user_addresses.edit');
+ Route::get('user-addresses/create', 'UserAddressesController@create')->name('user_addresses.create');
 });
