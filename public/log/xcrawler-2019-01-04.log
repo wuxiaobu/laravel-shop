@@ -1,4 +1,0 @@
-[2019-01-04 15:31:19] xcrawler.demo.INFO: 初始化队列 start [] []
-[2019-01-04 15:31:19] xcrawler.demo.INFO: 初始化队列 done [] []
-[2019-01-04 15:31:19] xcrawler.demo.INFO: 爬取 start [] []
-[2019-01-04 15:31:29] xcrawler.demo.INFO: 爬取 done 花费时间:9.835296s 线程数:1 总页数:2 请求成功次数:2 请求失败次数:0 解析失败次数:0 [] []
