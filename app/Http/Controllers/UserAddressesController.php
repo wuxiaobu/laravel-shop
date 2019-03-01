@@ -28,7 +28,8 @@ class UserAddressesController extends Controller
     }
 
     public function store(UserAddressRequest $request)
-    {
+    {   
+        dd(1);
         $request->user()->addresses()->create($request->only([
             'province',
             'city',
