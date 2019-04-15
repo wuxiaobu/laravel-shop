@@ -21,7 +21,7 @@ class ProductsController extends Controller
      * @return Content
      */
     public function index(Content $content)
-    {
+    {   
         return $content
             ->header('Index')
             ->description('description')
