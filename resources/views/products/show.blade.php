@@ -8,7 +8,7 @@
   <div class="card-body product-info">
     <div class="row">
       <div class="col-5">
-        <img class="cover" src="{{ Storage::url($product->image··) }}" alt="">
+        <img class="cover" src="{{ Storage::url($product->image) }}" alt="">
       </div>
       <div class="col-7">
         <div class="title">{{ $product->title }}</div>
