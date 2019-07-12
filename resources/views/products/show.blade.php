@@ -106,6 +106,21 @@
             });
         });
     });
+
+    // 加入购物车按钮点击事件
+    $('.btn-add-to-cart').click(function () {
+      // 请求加入购物车接口
+      axios.post('{{ route('cart.add') }}', {
+        sku_id: $('label.active input[name=skus]').val(),
+        amount: $('.cart_amount input').val(),
+      })
+      .then(function(){
+        swal('加入购物车成功', '', 'success');
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
+    })
   });
 </script>
 @endsection

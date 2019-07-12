@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Notifications\EmailVerificationNotification;
+use Cache;
+use App\Models\User;
 
 class EmailVerificationController extends Controller
 {
@@ -40,13 +42,13 @@ class EmailVerificationController extends Controller
   public function send(Request $request)
   {
     $user = $request->user();
-      // 判断用户是否已经激活
-      if ($user->email_verified) {
-          throw new Exception('你已经验证过邮箱了');
-      }
-      // 调用 notify() 方法用来发送我们定义好的通知类
-      $user->notify(new EmailVerificationNotification());
+    // 判断用户是否已经激活
+    if ($user->email_verified) {
+      throw new Exception('你已经验证过邮箱了');
+    }
+    // 调用 notify() 方法用来发送我们定义好的通知类
+    $user->notify(new EmailVerificationNotification());
 
-      return view('pages.success', ['msg' => '邮件发送成功']);
+    return view('pages.success', ['msg' => '邮件发送成功']);
   }
 }
