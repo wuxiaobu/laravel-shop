@@ -115,7 +115,10 @@
         amount: $('.cart_amount input').val(),
       })
       .then(function(){
-        swal('加入购物车成功', '', 'success');
+        swal('加入购物车成功', '', 'success')
+          .then(function(){
+            location.href = '{{ route('cart.index') }}';
+          });
       })
       .catch(function(error) {
         console.log(error);
