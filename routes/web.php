@@ -12,7 +12,7 @@
 */
 
 //Route::get('/', 'PagesController@root')->name('root');
-
+Route::get('/test', 'TestController@index');
 Auth::routes();
 
 Route::get('/github/login', 'LoginController@login');
@@ -25,9 +25,9 @@ Route::group(['middleware' => 'auth'], function() {
    Route::get('/email_verification/verify', 'EmailVerificationController@verify')->name('email_verification.verify');
    Route::get('/email_verification/send', 'EmailVerificationController@send')->name('email_verification.send');
    Route::group(['middleware' => 'email_verified'], function() {
-      Route::get('/test', function() {
-        return 'Your email is verified';
-      });
+      // Route::get('/test', function() {
+      //   return 'Your email is verified';
+      // });
       Route::get('user-addresses', 'UserAddressesController@index')->name('user_addresses.index');
       Route::get('user_addresses/{user_address}', 'UserAddressesController@edit')->name('user_addresses.edit');
       Route::get('user-addresses/create', 'UserAddressesController@create')->name('user_addresses.create');
@@ -42,6 +42,7 @@ Route::group(['middleware' => 'auth'], function() {
       Route::post('cart', 'CartController@add')->name('cart.add');
       Route::get('cart', 'CartController@index')->name('cart.index');
       Route::delete('cart/{sku}', 'CartController@remove')->name('cart.remove');
+      Route::post('orders', 'OrdersController@store')->name('orders.store');
    });
 });
 Route::redirect('/', '/products')->name('root');

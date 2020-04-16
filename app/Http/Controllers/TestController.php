@@ -10,8 +10,12 @@ use Mail;
 class TestController extends Controller
 {
     public function sendMail(){
-       $userVerification = new OrderShipped;
-       Mail::to(['email'=>'woshilieqie@163.com'])
+        $userVerification = new OrderShipped;
+        Mail::to(['email'=>'woshilieqie@163.com'])
            ->send($userVerification);
+    }
+
+    public function index(){
+        return view('test');
     }
 }
