@@ -1,9 +1,9 @@
 <?php
 return [
     'alipay' => [
-        'app_id'         => '',
-        'ali_public_key' => '',
-        'private_key'    => '',
+        'app_id'         => env('ALIPAY_APPID'),
+        'ali_public_key' => env('ALIPAY_PUB_KEY'),
+        'private_key'    => env('ALIPAY_PRI_KEY'),
         'log'            => [
             'file' => storage_path('logs/alipay.log'),
         ],
